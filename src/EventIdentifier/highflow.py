@@ -1,7 +1,10 @@
 import itertools
 import pandas as pd
+from pandas import groupby
 import numpy as np
 import datetime as dt
+import operator
+
 import matplotlib.pyplot as plt
 
 def identifier_highflow(obs_gage, dir_output, gage_id, thrld_min, thrld_jump=80, thrld_flat=75, no_flat=3, thrld_duration='6H',
